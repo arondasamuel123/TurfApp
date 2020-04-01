@@ -9,6 +9,7 @@ import { TurfComponent } from './turf/turf.component';
 import { TournamentComponent } from './tournament/tournament.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { TurfFormComponent } from './turf-form/turf-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './login/login.component';
     TurfComponent,
     TournamentComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    TurfFormComponent
   ],
   imports: [
     BrowserModule,
