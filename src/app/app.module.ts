@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { TurfComponent } from './turf/turf.component';
 import { TournamentComponent } from './tournament/tournament.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TournamentComponent } from './tournament/tournament.component';
     NavbarComponent,
     HomeComponent,
     TurfComponent,
-    TournamentComponent
+    TournamentComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
