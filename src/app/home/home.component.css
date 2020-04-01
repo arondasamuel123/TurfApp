@@ -1,0 +1,9 @@
+.jumbotron {
+  background-image: url('../../assets/images/pitch.jpg');
+  background-size: cover;
+  height: 500px;
+}
+
+.head_one {
+  margin-bottom: 200px;
+}
