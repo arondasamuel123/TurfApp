@@ -1,3 +1,5 @@
+import { Time } from '@angular/common';
+
 export class User {
   constructor(public username: string, public email: string, public password: string) {}
 }
@@ -6,4 +8,8 @@ export class LoginUser {
 }
 export class Turf {
   constructor(public turfName: string, public turfLocation: string, public price: number) {}
+}
+
+export class Booking {
+  constructor(public players: number, public date: Date, public time: number) {}
 }

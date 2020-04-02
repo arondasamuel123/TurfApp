@@ -2,20 +2,20 @@
   <br>
   <br>
   <br>
-  <form class="form-signin">
+  <form (ngSubmit)='booking()' #bookingForm='ngForm' class="form-signin">
     <img class="marginauto" src="../../assets/images/stadium.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Booking</h1>
     <label for="inputEmail" class="sr-only">Players</label>
-    <input type="number" id="inputEmail" class="form-control" placeholder="No. of players" required="" autofocus="">
+    <input type="number" id="inputEmail" class="form-control" placeholder="No. of players" name="players" #name='ngModel' [(ngModel)]="newBooking.players" required="" autofocus="">
     <br>
     <br>
     <label for="inputEmail" class="sr-only">Date</label>
-      <input type="date" class="form-control" placeholder="Date" required>
+      <input type="date" class="form-control" placeholder="Date" name="date" #name='ngModel' [(ngModel)]="newBooking.date" required>
 
     <br>
     <br>
     <label for="inputPassword" class="sr-only">Time</label>
-    <input type="time" class="form-control" placeholder="Time" required>
+    <input type="time" class="form-control" placeholder="Time" name="time" #name='ngModel' [(ngModel)]="newBooking.time" required>
     <br>
     <br>
 
