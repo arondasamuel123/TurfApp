@@ -24,4 +24,11 @@ export class TurfBackendService {
     // tslint:disable-next-line: max-line-length
     return this.http.post<any>(environment.baseUrl + 'api/v1/booking/' + id, {players, date, time}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
   }
+  getBooking(id: number) {
+    return this.http.get<any>(environment.baseUrl + 'api/v1/booking/' + id, {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
+  }
+  createTournament(tournamentName: string, tournamentDate: Date, tournamentPrize: number, tournamentPoster: string, id: number) {
+    // tslint:disable-next-line: max-line-length
+    return this.http.post<any>(environment.baseUrl + 'api/v1/tournament/' + id, {tournamentName, tournamentDate, tournamentPrize, tournamentPoster}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
+  }
 }

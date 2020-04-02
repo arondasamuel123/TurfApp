@@ -13,3 +13,9 @@ export class Turf {
 export class Booking {
   constructor(public players: number, public date: Date, public time: number) {}
 }
+
+export class Tournament {
+  // tslint:disable-next-line: max-line-length
+  constructor(public tournamentName: string, public tournamentDate: Date, public tournamentPrize: number, public tournamentPoster: string) {}
+}
+

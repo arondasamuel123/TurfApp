@@ -2,23 +2,23 @@
   <br>
   <br>
   <br>
-  <form class="form-signin" enctype="multipart/form-data">
+  <form (ngSubmit)='createTourna()' #tournaForm='ngForm' class="form-signin" enctype="multipart/form-data">
     <img class="marginauto" src="../../assets/images/stadium.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Host a Tournament</h1>
-    <label for="inputEmail" class="sr-only">Username</label>
-    <input type="text" id="inputEmail" class="form-control" placeholder="Tournament Name" required="" autofocus="">
+
+    <input type="text" id="inputName" class="form-control" placeholder="Tournament Name"  name="tournamentName" #name='ngModel' [(ngModel)]="newTourna.tournamentName" required="" >
     <br>
     <br>
-    <label for="inputEmail" class="sr-only">Email</label>
-    <input type="date" id="inputEmail" class="form-control" placeholder="Tournament Date" required="" autofocus="">
+
+    <input type="date" id="inputDate" class="form-control" placeholder="Tournament Date" name="tournamentDate" #name='ngModel' [(ngModel)]="newTourna.tournamentDate" required="" >
     <br>
     <br>
-    <label for="inputEmail" class="sr-only">Email</label>
-    <input type="number" id="inputEmail" class="form-control" placeholder="Tournament Prize" required="" autofocus="">
+
+    <input type="number" id="inputPrize" class="form-control" placeholder="Tournament Prize" name="tournamentPrize" #name='ngModel' [(ngModel)]="newTourna.tournamentPrize" required="">
     <br>
     <br>
-    <label for="inputEmail" class="sr-only">Email</label>
-    <input type="file" id="inputEmail" class="form-control" placeholder="Tournament Poster" required="" autofocus="">
+
+    <input type="file" id="inputPoster" class="form-control" placeholder="Tournament Poster" name="tournamentPoster" #name='ngModel' [(ngModel)]="newTourna.tournamentPoster" required="" autofocus="">
     <br>
     <br>
     <button class="btn  btn-primary btn-block" type="submit" style="background-color: black;"><font style="color: white;">CREATE TOURNAMENT</font></button>

@@ -8,6 +8,7 @@ import { TournaFormComponent } from './tourna-form/tourna-form.component';
 import { ScheduleFormComponent } from './schedule-form/schedule-form.component';
 import { JoinFormComponent } from './join-form/join-form.component';
 import { TurfDetailsComponent } from './turf-details/turf-details.component';
+import { BookingComponent } from './booking/booking.component';
 
 
 const routes: Routes = [
@@ -15,10 +16,11 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'booking-form/:id', component: BookingFormComponent},
-  {path: 'tourna-form', component: TournaFormComponent},
+  {path: 'tourna-form/:id', component: TournaFormComponent},
   {path: 'schedule-form', component: ScheduleFormComponent},
   {path: 'join-form', component: JoinFormComponent},
-  {path: 'turf/:id', component: TurfDetailsComponent}
+  {path: 'turf/:id', component: TurfDetailsComponent},
+  {path: 'view/:id', component: BookingComponent}
 ];
 
 @NgModule({
