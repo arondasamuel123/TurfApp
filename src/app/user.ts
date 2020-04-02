@@ -4,3 +4,6 @@ export class User {
 export class LoginUser {
   constructor(public username: string, public password: string) {}
 }
+export class Turf {
+  constructor(public turfName: string, public turfLocation: string, public price: number) {}
+}
