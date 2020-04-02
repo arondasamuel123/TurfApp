@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { BookingFormComponent } from './booking-form/booking-form.component';
 import { TournaFormComponent } from './tourna-form/tourna-form.component';
 import { ScheduleFormComponent } from './schedule-form/schedule-form.component';
+import { JoinFormComponent } from './join-form/join-form.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'booking-form', component: BookingFormComponent},
   {path: 'tourna-form', component: TournaFormComponent},
-  {path: 'schedule-form', component: ScheduleFormComponent}
+  {path: 'schedule-form', component: ScheduleFormComponent},
+  {path: 'join-form', component: JoinFormComponent}
 ];
 
 @NgModule({
