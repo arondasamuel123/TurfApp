@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,6 +14,7 @@ import { BookingFormComponent } from './booking-form/booking-form.component';
 import { TournaFormComponent } from './tourna-form/tourna-form.component';
 import { ScheduleFormComponent } from './schedule-form/schedule-form.component';
 import { JoinFormComponent } from './join-form/join-form.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { JoinFormComponent } from './join-form/join-form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

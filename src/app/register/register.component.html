@@ -2,22 +2,22 @@
   <br>
   <br>
   <br>
-  <form class="form-signin">
+  <form (ngSubmit)='registerUser()'  #registerForm='ngForm' class="form-signin">
     <img class="marginauto" src="../../assets/images/stadium.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Register</h1>
-    <label for="inputEmail" class="sr-only">Username</label>
-    <input type="text" id="inputEmail" class="form-control" placeholder="Username" required="" autofocus="">
+
+    <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username" #name='ngModel' [(ngModel)]="newUser.username" required="" autofocus="">
     <br>
     <br>
-    <label for="inputEmail" class="sr-only">Email</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="">
+
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email" name="email" #name='ngModel' [(ngModel)]="newUser.email" required="" autofocus="">
     <br>
     <br>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" #name='ngModel' [(ngModel)]="newUser.password" required="">
     <br>
     <br>
-    <label for="inputEmail" class="sr-only">Role Type</label>
+
     <select class="form-control">
       <option>Choose an option....</option>
       <option value="TU">Turf User</option>
