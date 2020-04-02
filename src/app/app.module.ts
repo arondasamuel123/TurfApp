@@ -11,6 +11,9 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { TurfFormComponent } from './turf-form/turf-form.component';
 import { BookingFormComponent } from './booking-form/booking-form.component';
+import { TournaFormComponent } from './tourna-form/tourna-form.component';
+import { ScheduleFormComponent } from './schedule-form/schedule-form.component';
+import { JoinFormComponent } from './join-form/join-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { BookingFormComponent } from './booking-form/booking-form.component';
     RegisterComponent,
     LoginComponent,
     TurfFormComponent,
-    BookingFormComponent
+    BookingFormComponent,
+    TournaFormComponent,
+    ScheduleFormComponent,
+    JoinFormComponent
   ],
   imports: [
     BrowserModule,
