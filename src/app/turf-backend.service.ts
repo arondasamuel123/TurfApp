@@ -31,4 +31,8 @@ export class TurfBackendService {
     // tslint:disable-next-line: max-line-length
     return this.http.post<any>(environment.baseUrl + 'api/v1/tournament/' + id, {tournamentName, tournamentDate, tournamentPrize, tournamentPoster}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
   }
+
+  getTournaments() {
+    return this.http.get<any>(environment.baseUrl + 'api/v1/tournaments', {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
+  }
 }
