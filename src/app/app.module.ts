@@ -10,6 +10,7 @@ import { TournamentComponent } from './tournament/tournament.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { TurfFormComponent } from './turf-form/turf-form.component';
+import { BookingFormComponent } from './booking-form/booking-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TurfFormComponent } from './turf-form/turf-form.component';
     TournamentComponent,
     RegisterComponent,
     LoginComponent,
-    TurfFormComponent
+    TurfFormComponent,
+    BookingFormComponent
   ],
   imports: [
     BrowserModule,
