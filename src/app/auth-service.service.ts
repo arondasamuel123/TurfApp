@@ -17,4 +17,7 @@ export class AuthServiceService {
       return this.http.post<any>(environment.baseUrl + 'api/user', {username, email, password});
 
   }
+  login(username: string, password: string) {
+    return this.http.post<any>(environment.baseUrl + 'api/token/', {username, password});
+  }
 }
