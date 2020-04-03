@@ -26,3 +26,7 @@ export class Join {
   constructor(public team_name: string, public players: number,  public payment_method: string) {}
 }
 
+export class Status {
+  // tslint:disable-next-line: variable-name
+  constructor(public status: boolean, public players: number) {}
+}

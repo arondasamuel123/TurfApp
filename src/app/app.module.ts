@@ -17,6 +17,7 @@ import { JoinFormComponent } from './join-form/join-form.component';
 import {HttpClientModule} from '@angular/common/http';
 import { TurfDetailsComponent } from './turf-details/turf-details.component';
 import { BookingComponent } from './booking/booking.component';
+import { UpdateFormComponent } from './update-form/update-form.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BookingComponent } from './booking/booking.component';
     ScheduleFormComponent,
     JoinFormComponent,
     TurfDetailsComponent,
-    BookingComponent
+    BookingComponent,
+    UpdateFormComponent
   ],
   imports: [
     BrowserModule,

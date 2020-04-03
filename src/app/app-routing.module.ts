@@ -9,6 +9,7 @@ import { ScheduleFormComponent } from './schedule-form/schedule-form.component';
 import { JoinFormComponent } from './join-form/join-form.component';
 import { TurfDetailsComponent } from './turf-details/turf-details.component';
 import { BookingComponent } from './booking/booking.component';
+import { UpdateFormComponent } from './update-form/update-form.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'schedule-form', component: ScheduleFormComponent},
   {path: 'join-form/:id', component: JoinFormComponent},
   {path: 'turf/:id', component: TurfDetailsComponent},
-  {path: 'view/:id', component: BookingComponent}
+  {path: 'view/:id', component: BookingComponent},
+  {path: 'update-form/:id', component: UpdateFormComponent}
 ];
 
 @NgModule({

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {environment} from './../environments/environment';
 import {AuthServiceService} from './auth-service.service';
+import { Booking } from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -25,8 +26,13 @@ export class TurfBackendService {
     // tslint:disable-next-line: max-line-length
     return this.http.post<any>(environment.baseUrl + 'api/v1/booking/' + id, {players, date, time}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
   }
+  updateBooking(status: boolean, players: number, id: number) {
+    // tslint:disable-next-line: max-line-length
+    return this.http.patch<any>(environment.baseUrl + 'api/v1/booking/' + id, {status, players}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
+  }
   getBooking(id: number) {
-    return this.http.get<any>(environment.baseUrl + 'api/v1/booking/' + id, {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
+    // tslint:disable-next-line: max-line-length
+    return this.http.get<Booking>(environment.baseUrl + 'api/v1/booking/' + id, {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
   }
   // tslint:disable-next-line: variable-name
   createTournament(tournament_name: string, tournament_date: Date, tournament_prize: number, tournament_poster: string, id: number) {
