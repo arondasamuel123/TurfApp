@@ -17,7 +17,7 @@ newTourna = new Tournament('', new Date(), 0, '') ;
     this.route.params.subscribe(params => {
       const id = params.id;
       // tslint:disable-next-line: max-line-length
-      this.endpoint.createTournament(this.newTourna.tournamentName, this.newTourna.tournamentDate, this.newTourna.tournamentPrize, this.newTourna.tournamentPoster, id).subscribe(
+      this.endpoint.createTournament(this.newTourna.tournament_name, this.newTourna.tournament_date, this.newTourna.tournament_prize, this.newTourna.tournament_poster, id).subscribe(
         response => {
           console.log(response);
           alert('Created tournament successfully');

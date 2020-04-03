@@ -6,19 +6,19 @@
     <img class="marginauto" src="../../assets/images/stadium.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Host a Tournament</h1>
 
-    <input type="text" id="inputName" class="form-control" placeholder="Tournament Name"  name="tournamentName" #name='ngModel' [(ngModel)]="newTourna.tournamentName" required="" >
+    <input type="text" id="inputName" class="form-control" placeholder="Tournament Name"  name="tournament_name" #name='ngModel' [(ngModel)]="newTourna.tournament_name" required="" >
     <br>
     <br>
 
-    <input type="date" id="inputDate" class="form-control" placeholder="Tournament Date" name="tournamentDate" #name='ngModel' [(ngModel)]="newTourna.tournamentDate" required="" >
+    <input type="date" id="inputDate" class="form-control" placeholder="Tournament Date" name="tournament_date" #name='ngModel' [(ngModel)]="newTourna.tournament_date" required="" >
     <br>
     <br>
 
-    <input type="number" id="inputPrize" class="form-control" placeholder="Tournament Prize" name="tournamentPrize" #name='ngModel' [(ngModel)]="newTourna.tournamentPrize" required="">
+    <input type="number" id="inputPrize" class="form-control" placeholder="Tournament Prize" name="tournament_prize" #name='ngModel' [(ngModel)]="newTourna.tournament_prize" required="">
     <br>
     <br>
 
-    <input type="file" id="inputPoster" class="form-control" placeholder="Tournament Poster" name="tournamentPoster" #name='ngModel' [(ngModel)]="newTourna.tournamentPoster" required="" autofocus="">
+    <input type="file" id="inputPoster" class="form-control" placeholder="Tournament Poster" name="tournament_poster" #name='ngModel' [(ngModel)]="newTourna.tournament_poster" required="" autofocus="">
     <br>
     <br>
     <button class="btn  btn-primary btn-block" type="submit" style="background-color: black;"><font style="color: white;">CREATE TOURNAMENT</font></button>

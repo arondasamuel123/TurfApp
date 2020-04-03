@@ -29,9 +29,9 @@ export class TurfBackendService {
   getBooking(id: number) {
     return this.http.get<any>(environment.baseUrl + 'api/v1/booking/' + id, {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
   }
-  createTournament(tournamentName: string, tournamentDate: Date, tournamentPrize: number, tournamentPoster: string, id: number) {
+  createTournament(tournament_name: string, tournament_date: Date, tournament_prize: number, tournament_poster: string, id: number) {
     // tslint:disable-next-line: max-line-length
-    return this.http.post<any>(environment.baseUrl + 'api/v1/tournament/' + id, {tournamentName, tournamentDate, tournamentPrize, tournamentPoster}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
+    return this.http.post<any>(environment.baseUrl + 'api/v1/tournament/' + id, {tournament_name, tournament_date, tournament_prize, tournament_poster}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
   }
 
   getTournaments() {

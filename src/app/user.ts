@@ -16,7 +16,7 @@ export class Booking {
 
 export class Tournament {
   // tslint:disable-next-line: max-line-length
-  constructor(public tournamentName: string, public tournamentDate: Date, public tournamentPrize: number, public tournamentPoster: string) {}
+  constructor(public tournament_name: string, public tournament_date: Date, public tournament_prize: number, public tournament_poster: string) {}
 }
 
 export class Join {
