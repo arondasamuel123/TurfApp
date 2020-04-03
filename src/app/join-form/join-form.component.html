@@ -2,20 +2,20 @@
   <br>
   <br>
   <br>
-  <form class="form-signin" enctype="multipart/form-data">
+  <form  class="form-signin" [formGroup]="form" (ngSubmit)="joinForm()">
     <img class="marginauto" src="../../assets/images/stadium.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Join Tournament</h1>
     <label for="inputEmail" class="sr-only">Username</label>
-    <input type="text" id="inputEmail" class="form-control" placeholder="Team Name" required="" autofocus="">
+    <input type="text"  id="inputEmail" class="form-control" placeholder="Team Name" formControlName="teamName" required="" autofocus="">
     <br>
     <br>
     <label for="inputEmail" class="sr-only">Email</label>
-    <input type="text" id="inputEmail" class="form-control" placeholder="No.of players" required="" autofocus="">
+    <input type="text"  id="inputEmail" class="form-control" placeholder="No.of players" formControlName="players"required="" autofocus="">
     <br>
     <br>
 
     <label for="inputEmail" class="sr-only">Day</label>
-    <select class="form-control">
+    <select class="form-control" formControlName="payment_method">
       <option>Payment method....</option>
       <option value="Mpesa">Mpesa</option>
       <option value="Cash">Cash at entry</option>

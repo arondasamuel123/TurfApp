@@ -13,7 +13,7 @@ newTurf = new Turf('', '', 0);
   constructor(private endpoint: TurfBackendService, private router: Router) { }
 
   create() {
-    this.endpoint.createTurf(this.newTurf.turfName, this.newTurf.turfLocation, this.newTurf.price).subscribe(
+    this.endpoint.createTurf(this.newTurf.turf_name, this.newTurf.turf_location, this.newTurf.price).subscribe(
       response => {
         console.log(response);
         alert('Turf created successfully');

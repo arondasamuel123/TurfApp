@@ -18,7 +18,7 @@ const routes: Routes = [
   {path: 'booking-form/:id', component: BookingFormComponent},
   {path: 'tourna-form/:id', component: TournaFormComponent},
   {path: 'schedule-form', component: ScheduleFormComponent},
-  {path: 'join-form', component: JoinFormComponent},
+  {path: 'join-form/:id', component: JoinFormComponent},
   {path: 'turf/:id', component: TurfDetailsComponent},
   {path: 'view/:id', component: BookingComponent}
 ];

@@ -2,7 +2,9 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {environment} from './../environments/environment';
 import {AuthServiceService} from './auth-service.service';
-import { Time } from '@angular/common';
+
+import { Join } from './user';
+import { Observable, throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,9 +12,9 @@ export class TurfBackendService {
 
   constructor(private http: HttpClient, private auth: AuthServiceService) { }
 
-  createTurf(turfName: string, turfLocation: string, price: number) {
+  createTurf(turf_name: string, turf_location: string, price: number) {
     // tslint:disable-next-line: max-line-length
-    return this.http.post<any>(environment.baseUrl + 'api/v1/turf', {turfName, turfLocation, price}, {headers: {Authorization: `Bearer ${localStorage.getItem('token')}` }});
+    return this.http.post<any>(environment.baseUrl + 'api/v1/turf', {turf_name, turf_location, price}, {headers: {Authorization: `Bearer ${localStorage.getItem('token')}` }});
   }
   getTurfs() {
     return this.http.get<any>(environment.baseUrl + 'api/v1/turfs', {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
@@ -34,5 +36,9 @@ export class TurfBackendService {
 
   getTournaments() {
     return this.http.get<any>(environment.baseUrl + 'api/v1/tournaments', {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
+  }
+  joinTournament(join: Join, id: number): Observable<any> {
+    // tslint:disable-next-line: max-line-length
+    return this.http.post<{token: string}>(environment.baseUrl + 'api/v1/join/' + id, {join}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
   }
 }
