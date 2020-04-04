@@ -30,3 +30,9 @@ export class Status {
   // tslint:disable-next-line: variable-name
   constructor(public status: boolean, public players: number) {}
 }
+
+export class Schedule {
+  // tslint:disable-next-line: variable-name
+  constructor(public time_slot_one: string, public time_slot_two: string, public time_slot_three: string, public day: string) {}
+}
+

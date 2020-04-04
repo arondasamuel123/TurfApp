@@ -24,7 +24,8 @@ const routes: Routes = [
   {path: 'turf/:id', component: TurfDetailsComponent},
   {path: 'view/:id', component: BookingComponent},
   {path: 'update-form/:id', component: UpdateFormComponent},
-  {path: 'delete/:id', component: DeleteBookingComponent}
+  {path: 'delete/:id', component: DeleteBookingComponent},
+  {path: 'create-shed/:id', component: ScheduleFormComponent}
 ];
 
 @NgModule({

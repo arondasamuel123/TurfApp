@@ -8,7 +8,7 @@ import {TurfBackendService} from '../turf-backend.service';
 export class TurfComponent implements OnInit {
   data: any;
   constructor(private endpoint: TurfBackendService ) { }
-
+  public userRole = localStorage.getItem('currentRole');
   ngOnInit() {
       this.endpoint.getTurfs().subscribe(
         response => {

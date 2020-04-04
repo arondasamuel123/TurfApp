@@ -52,4 +52,10 @@ export class TurfBackendService {
     // tslint:disable-next-line: max-line-length
     return this.http.post<any>(environment.baseUrl + 'api/v1/join/' + id, {team_name, players, payment_method}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
   }
+
+  // tslint:disable-next-line: variable-name
+  createSchedule(time_slot_one: string, time_slot_two: string, time_slot_three: string, day: string, id: number) {
+    // tslint:disable-next-line: max-line-length
+    return this.http.post<any>(environment.baseUrl + 'api/v1/schedule/' + id, {time_slot_one, time_slot_two, time_slot_three, day}, {headers: {Authorization: `Bearer ${this.auth.getToken()}`}});
+  }
 }
