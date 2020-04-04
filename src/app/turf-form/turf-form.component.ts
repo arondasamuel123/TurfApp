@@ -9,7 +9,7 @@ import {TurfBackendService} from '../turf-backend.service';
 })
 export class TurfFormComponent implements OnInit {
 newTurf = new Turf('', '', 0);
-
+public userRole = localStorage.getItem('currentRole');
   constructor(private endpoint: TurfBackendService, private router: Router) { }
 
   create() {
