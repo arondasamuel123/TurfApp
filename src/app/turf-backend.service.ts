@@ -62,4 +62,7 @@ export class TurfBackendService {
     // tslint:disable-next-line: max-line-length
     return this.http.get<any>(environment.baseUrl + 'api/v1/schedule/' + id, {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
   }
+  getTeams(id: number) {
+    return this.http.get<any>(environment.baseUrl + 'api/v1/join/' + id,  {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
+  }
 }

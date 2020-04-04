@@ -1,0 +1,26 @@
+<div class="album py-5 bg-light">
+  <div class="container">
+
+    <div class="row" >
+      <div class="col-md-4" *ngFor="let item of teams; let i=index">
+        <h2>Team #{{item.id}}</h2>
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top"  alt="Thumbnail [100%x225]" style="width: 100%; display: block;" src="../../assets/images/football-player.png" data-holder-rendered="true">
+          <div class="card-body">
+            <p class="card-text">Team Name:{{item.team_name}}</p>
+            <p class="card-text">No.of players:{{item.players}}</p>
+            <p class="card-text">Payment Method:{{item.payment_method}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/update-form/" style="background-color: black;"><font style="color: white;">UPDATE SCHEDULE</font></a>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

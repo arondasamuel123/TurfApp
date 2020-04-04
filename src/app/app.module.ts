@@ -20,6 +20,7 @@ import { BookingComponent } from './booking/booking.component';
 import { UpdateFormComponent } from './update-form/update-form.component';
 import { DeleteBookingComponent } from './delete-booking/delete-booking.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { TeamsComponent } from './teams/teams.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     BookingComponent,
     UpdateFormComponent,
     DeleteBookingComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
