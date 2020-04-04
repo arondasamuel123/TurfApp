@@ -18,6 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { TurfDetailsComponent } from './turf-details/turf-details.component';
 import { BookingComponent } from './booking/booking.component';
 import { UpdateFormComponent } from './update-form/update-form.component';
+import { DeleteBookingComponent } from './delete-booking/delete-booking.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { UpdateFormComponent } from './update-form/update-form.component';
     JoinFormComponent,
     TurfDetailsComponent,
     BookingComponent,
-    UpdateFormComponent
+    UpdateFormComponent,
+    DeleteBookingComponent
   ],
   imports: [
     BrowserModule,

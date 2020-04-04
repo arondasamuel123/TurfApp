@@ -10,6 +10,8 @@ export class BookingComponent implements OnInit {
 booking;
   constructor(private endpoint: TurfBackendService,  private route: ActivatedRoute) { }
 
+
+
   ngOnInit() {
     this.route.params.subscribe(params => {
       const id = params.id;

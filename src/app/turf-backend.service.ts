@@ -30,6 +30,10 @@ export class TurfBackendService {
     // tslint:disable-next-line: max-line-length
     return this.http.patch<any>(environment.baseUrl + 'api/v1/booking/' + id, {status, players}, {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
   }
+  deleteBooking(id: number) {
+    // tslint:disable-next-line: max-line-length
+    return this.http.delete<Booking>(environment.baseUrl + 'api/v1/view/' + id, {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
+  }
   getBooking(id: number) {
     // tslint:disable-next-line: max-line-length
     return this.http.get<Booking>(environment.baseUrl + 'api/v1/booking/' + id, {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
