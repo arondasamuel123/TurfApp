@@ -16,7 +16,7 @@
                   <br>
                   <br>
                   <a type="button" class="btn btn-sm btn-outline-secondary" *ngIf="userRole === 'TO' else other_anchor" href="/create-shed/{{turf.id}}" style="background-color:black"><font style="color:white;">CREATE SCHEDULE</font></a>
-                  <ng-template #other_anchor><a type="button" class="btn btn-sm btn-outline-secondary" href="/booking-form/{{turf.id}}" style="background-color: black;"><font style="color: white;">VIEW SCHEDULE</font></a></ng-template>
+                  <ng-template #other_anchor><a type="button" class="btn btn-sm btn-outline-secondary" href="/view-shed/{{turf.id}}" style="background-color: black;"><font style="color: white;">VIEW SCHEDULE</font></a></ng-template>
                 </div>
 
               </div>

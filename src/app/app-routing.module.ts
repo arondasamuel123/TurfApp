@@ -11,6 +11,7 @@ import { TurfDetailsComponent } from './turf-details/turf-details.component';
 import { BookingComponent } from './booking/booking.component';
 import { UpdateFormComponent } from './update-form/update-form.component';
 import { DeleteBookingComponent } from './delete-booking/delete-booking.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: 'view/:id', component: BookingComponent},
   {path: 'update-form/:id', component: UpdateFormComponent},
   {path: 'delete/:id', component: DeleteBookingComponent},
-  {path: 'create-shed/:id', component: ScheduleFormComponent}
+  {path: 'create-shed/:id', component: ScheduleFormComponent},
+  {path: 'view-shed/:id', component: ScheduleComponent}
 ];
 
 @NgModule({

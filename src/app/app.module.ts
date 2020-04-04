@@ -19,6 +19,7 @@ import { TurfDetailsComponent } from './turf-details/turf-details.component';
 import { BookingComponent } from './booking/booking.component';
 import { UpdateFormComponent } from './update-form/update-form.component';
 import { DeleteBookingComponent } from './delete-booking/delete-booking.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DeleteBookingComponent } from './delete-booking/delete-booking.componen
     TurfDetailsComponent,
     BookingComponent,
     UpdateFormComponent,
-    DeleteBookingComponent
+    DeleteBookingComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,

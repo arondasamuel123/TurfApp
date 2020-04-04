@@ -58,4 +58,8 @@ export class TurfBackendService {
     // tslint:disable-next-line: max-line-length
     return this.http.post<any>(environment.baseUrl + 'api/v1/schedule/' + id, {time_slot_one, time_slot_two, time_slot_three, day}, {headers: {Authorization: `Bearer ${this.auth.getToken()}`}});
   }
+  getSchedules(id: number) {
+    // tslint:disable-next-line: max-line-length
+    return this.http.get<any>(environment.baseUrl + 'api/v1/schedule/' + id, {headers: {Authorization: `Bearer ${this.auth.getToken()}` }});
+  }
 }
