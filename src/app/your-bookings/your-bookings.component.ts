@@ -1,21 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import {TurfBackendService} from '../turf-backend.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
-  selector: 'app-booking',
-  templateUrl: './booking.component.html',
-  styleUrls: ['./booking.component.css']
+  selector: 'app-your-bookings',
+  templateUrl: './your-bookings.component.html',
+  styleUrls: ['./your-bookings.component.css']
 })
-export class BookingComponent implements OnInit {
+export class YourBookingsComponent implements OnInit {
 bookings;
-  constructor(private endpoint: TurfBackendService,  private route: ActivatedRoute) { }
-
-
+  constructor(private endpoint: TurfBackendService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       const id = params.id;
-      this.endpoint.getBooking(id).subscribe(
+      this.endpoint.getUserBookings(id).subscribe(
         response => {
           this.bookings = response;
           console.log(this.bookings);
@@ -26,7 +25,6 @@ bookings;
       );
 
     });
-
   }
 
 }

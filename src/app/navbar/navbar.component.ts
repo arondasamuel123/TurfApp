@@ -8,16 +8,19 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   userDisplayName = '';
+  public userId;
   constructor(private router: Router) { }
 logOut() {
   localStorage.removeItem('currentUser');
   localStorage.removeItem('token');
   localStorage.removeItem('currentRole');
+  localStorage.removeItem('currentId');
   this.router.navigate(['/login']);
 
 }
   ngOnInit() {
     this.userDisplayName = localStorage.getItem('currentUser');
+    this.userId = localStorage.getItem('currentId');
   }
 
 }

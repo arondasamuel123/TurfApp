@@ -13,6 +13,7 @@ import { UpdateFormComponent } from './update-form/update-form.component';
 import { DeleteBookingComponent } from './delete-booking/delete-booking.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { TeamsComponent } from './teams/teams.component';
+import { YourBookingsComponent } from './your-bookings/your-bookings.component';
 
 
 const routes: Routes = [
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path: 'delete/:id', component: DeleteBookingComponent},
   {path: 'create-shed/:id', component: ScheduleFormComponent},
   {path: 'view-shed/:id', component: ScheduleComponent},
-  {path: 'view-teams/:id', component: TeamsComponent}
+  {path: 'view-teams/:id', component: TeamsComponent},
+  {path: 'your-bookings/:id', component: YourBookingsComponent}
 ];
 
 @NgModule({

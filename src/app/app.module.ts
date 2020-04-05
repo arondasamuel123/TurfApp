@@ -21,6 +21,7 @@ import { UpdateFormComponent } from './update-form/update-form.component';
 import { DeleteBookingComponent } from './delete-booking/delete-booking.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { TeamsComponent } from './teams/teams.component';
+import { YourBookingsComponent } from './your-bookings/your-bookings.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TeamsComponent } from './teams/teams.component';
     UpdateFormComponent,
     DeleteBookingComponent,
     ScheduleComponent,
-    TeamsComponent
+    TeamsComponent,
+    YourBookingsComponent
   ],
   imports: [
     BrowserModule,

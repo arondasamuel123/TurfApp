@@ -65,4 +65,7 @@ export class TurfBackendService {
   getTeams(id: number) {
     return this.http.get<any>(environment.baseUrl + 'api/v1/join/' + id,  {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
   }
+  getUserBookings(id: number) {
+    return this.http.get<any>(environment.baseUrl + 'api/v1/view/' + id,  {headers: {Authorization: `Bearer ${this.auth.getToken()} ` }});
+  }
 }

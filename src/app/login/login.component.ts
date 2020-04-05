@@ -20,6 +20,7 @@ loginUser = new LoginUser('', '');
           localStorage.setItem('token', response.access);
           localStorage.setItem('currentUser', response.user);
           localStorage.setItem('currentRole', response.role_type);
+          localStorage.setItem('currentId', response.id);
           alert('You have successfully logged in');
           this.router.navigate(['']);
       },

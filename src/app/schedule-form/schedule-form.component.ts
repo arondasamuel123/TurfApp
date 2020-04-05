@@ -14,7 +14,7 @@ createSched() {
   this.route.params.subscribe(params => {
     const id = params.id;
     // tslint:disable-next-line: max-line-length
-    this.endpoint.createSchedule(this.newSched.time_slot_one, this.newSched.time_slot_two, this.newSched.time_slot_three,this.newSched.day, id).subscribe(
+    this.endpoint.createSchedule(this.newSched.time_slot_one, this.newSched.time_slot_two, this.newSched.time_slot_three, this.newSched.day, id).subscribe(
       response => {
         console.log(response);
         alert('Sucessfully created schedule');
