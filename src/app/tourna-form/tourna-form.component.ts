@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import {Tournament} from '../user';
 import {TurfBackendService} from '../turf-backend.service';
 import { ActivatedRoute } from '@angular/router';
-import {environment} from '../../environments/environment';
+
 
 @Component({
   selector: 'app-tourna-form',
