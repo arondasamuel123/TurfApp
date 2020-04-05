@@ -22,7 +22,7 @@ import { DeleteBookingComponent } from './delete-booking/delete-booking.componen
 import { ScheduleComponent } from './schedule/schedule.component';
 import { TeamsComponent } from './teams/teams.component';
 import { YourBookingsComponent } from './your-bookings/your-bookings.component';
-
+import {FileSelectDirective } from 'ng2-file-upload';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +43,8 @@ import { YourBookingsComponent } from './your-bookings/your-bookings.component';
     DeleteBookingComponent,
     ScheduleComponent,
     TeamsComponent,
-    YourBookingsComponent
+    YourBookingsComponent,
+    FileSelectDirective
   ],
   imports: [
     BrowserModule,

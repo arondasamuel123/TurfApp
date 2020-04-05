@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import {Tournament} from '../user';
 import {TurfBackendService} from '../turf-backend.service';
 import { ActivatedRoute } from '@angular/router';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-tourna-form',
@@ -11,6 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TournaFormComponent implements OnInit {
 newTourna = new Tournament('', new Date(), 0, '') ;
+
   constructor(private endpoint: TurfBackendService, private router: Router, private route: ActivatedRoute) { }
 
   createTourna() {
@@ -32,7 +34,6 @@ newTourna = new Tournament('', new Date(), 0, '') ;
       );
 
     });
-
   }
 
   ngOnInit() {
